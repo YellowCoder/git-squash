@@ -33,9 +33,17 @@ echo -e "$(tput setaf 2)\n** Executing push command$(tput sgr0)\n"
 git push origin -f $CURRENT_BRANCH
 ```
 
-**To execute:**
+**How to install:**
 
-At some git repository, run:
+Run this command line:
+
+```bash
+$ gem install git-squash
+```
+
+**Usage:**
+
+At some git repository, just run:
 
 ```bash
 git squash
