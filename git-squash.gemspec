@@ -12,10 +12,11 @@ Gem::Specification.new do |s|
   s.email       = ['adrianotadao@gmail.com']
   s.homepage    = "https://github.com/adrianotadao/git-squash"
   s.summary     = "git shortcut to join all commits in just one"
+  s.description = "Sometimes execute the basic git commands is very boring and repetitive so, this shortcut will make your git repository be most clean."
   s.license     = "MIT"
 
-  s.add_dependency "colored", ">= 1.2"
-  s.add_dependency "grit"
+  s.add_runtime_dependency "colored", "~> 1.2"
+  s.add_runtime_dependency "grit", "2.5.0"
 
   s.files        = Dir.glob("{bin,lib}/**/*") + %w(LICENSE README.md)
   s.require_path = 'lib'

@@ -10,7 +10,7 @@ Sometimes execute the basic git commands is very boring and repetitive so, this 
 
 Warning: This procedures clears the commits history. So do not run it if you'll need this history.
 
-**The Script**
+**The Script is similar to:**
 
 ```bash
 #!/bin/bash
