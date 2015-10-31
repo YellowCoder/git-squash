@@ -54,6 +54,7 @@ or
 ```bash
 git-squash "Commit Message"
 ```
+*Ps. The default branch is `master`*
 
 or
 
