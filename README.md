@@ -1,6 +1,6 @@
 ###Git shortcut to automate the commit, squash and push commands
 
-Sometimes execute the basic git commands is very boring and repetitive so, this shortcut is awesome. It will run these commands in this order:
+Sometimes executing basic git commands is much boring and repetitive so, this shortcut will help you a lot. It will run these commands in this sequence:
 
 - get the MERGE_BASE_ID
 - `git reset --soft MERGE_BASE_ID`
