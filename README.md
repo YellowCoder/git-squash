@@ -1,14 +1,16 @@
 ###Git shortcut to automate the commit, squash and push commands
 
-Sometimes executing basic git commands is much boring and repetitive so, this shortcut will help you a lot. It will run these commands in this sequence:
+Sometimes executing basic git commands is very boring and repetitive so, this shortcut will help you a lot. It will run these commands in this sequence:
 
-- get the MERGE_BASE_ID
+- `git merge-base HEAD YOUR_CURRENT_BRANCH`
 - `git reset --soft MERGE_BASE_ID`
 - `git add .`
 - `git commit -m "YOUR_MESSAGE_COMMIT"`
 - `git push origin -f YOUR_CURRENT_BRANCH`
 
-Warning: This procedures clears the commits history. So do not run it if you'll need this history.
+Warnings:
+- #1: This procedures clears all the commit history. So do not run it if you'll need this history.
+- #2: This script run a force commit. So, be careful.
 
 **The Script is similar to:**
 
@@ -27,7 +29,7 @@ echo -e "$(tput setaf 2)\n** Executing add command$(tput sgr0)\n"
 git add .
 
 echo -e "$(tput setaf 2)\n** Executing commit command$(tput sgr0)\n"
-git commit -m "$COMMIT_MESSAGE"
+git commit -S -am "$COMMIT_MESSAGE"
 
 echo -e "$(tput setaf 2)\n** Executing push command$(tput sgr0)\n"
 git push origin -f $CURRENT_BRANCH

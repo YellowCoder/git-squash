@@ -24,9 +24,9 @@ class GitSquash
 
   def commit_command
     puts "Executing commit command".green
-    puts "git commit -m #{ message }".yellow
+    puts "git commit -S -am #{ message }".yellow
     puts
-    %x(git commit -m "#{ message }")
+    %x(git commit -S -am "#{ message }")
   end
 
   def add_command
@@ -59,7 +59,7 @@ class GitSquash
   end
 
   def message
-    @argv[0] || 'no message commit'
+    @argv[0] || 'no commit message'
   end
 
   def get_repo
